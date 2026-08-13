@@ -6,6 +6,7 @@ function Users() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
+  // API endpoint: https://${codespaceName}-8000.app.github.dev/api/users/
   useEffect(() => {
     async function loadUsers() {
       try {
