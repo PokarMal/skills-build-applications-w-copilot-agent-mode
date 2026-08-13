@@ -6,7 +6,7 @@ function Leaderboard() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
-  // API endpoint: https://${codespaceName}-8000.app.github.dev/api/leaderboard/
+  // API endpoint: -8000.app.github.dev/api/leaderboard
   useEffect(() => {
     async function loadLeaderboard() {
       try {
