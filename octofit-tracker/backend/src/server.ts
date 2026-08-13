@@ -1,3 +1,4 @@
+import cors from 'cors';
 import express from 'express';
 import './config/database';
 import activitiesRouter from './routes/activities';
@@ -14,6 +15,7 @@ const apiBaseUrl = codespaceName
   : `http://localhost:${PORT}`;
 
 // Middleware
+app.use(cors());
 app.use(express.json());
 
 // Routes
